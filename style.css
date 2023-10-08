@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #2B283A;
+}
+
+/* ------ typography -------- */
+
+nav h3 {
+    font-size: 0.90375rem;
+    margin: 0;
+}
+
+p {
+    font-size: 0.64rem;
+}
+
+a {
+    color: #918E9B;
+    text-decoration-line: underline;
+    letter-spacing: 0;
+}
+
+.country {
+    letter-spacing: 1.741px;
+}
+
+.fa-location-dot {
+    color: #F55A5A;
+}
+
+.location-name {
+    font-size: 1.3rem;
+    margin: 0 0 -2px;
+}
+
+.country p {
+    text-transform: uppercase;
+}
+
+.maps-link p {
+    margin: 0 0 1.125em;
+}
+
+.date {
+    font-weight: 700;
+}
+
+/* ------ nav -------- */
+
+nav {
+    background: #F55A5A;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+/* ------ main -------- */
+
+main {
+    padding: 0 1em;
+}
+
+.location-container,
+.country {
+    display: flex;
+    align-items: center;
+}
+
+.location-container {
+    padding: 1.5em 0;
+    gap: 1em;
+    border-bottom: 1px solid #E8E8E8;
+    max-width: 467px;
+    margin: 0 auto;
+}
+
+.location-img {
+    width: 7.81em;
+    height: 11.5em;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.location-text-top {
+    gap: 0.7em;
+}
+
+.country {
+    gap: 0.18em;
+}
+
+/* ------ media querys -------- */
+
+@media(min-width: 400px) {
+    
+/* ------ typography -------- */
+
+    .location-name {
+        font-size: 1.56rem;
+        margin: 0 0 1em;
+    }
+    
+    .maps-link p {
+        margin: 0 0 0px;
+    }
+    
+/* ------ nav -------- */
+    nav {
+        margin-bottom: 0.5em;
+        padding: 1.3em;
+    }
+    
+/* ------ main -------- */
+    .location-img {
+        height: 10.5em;
+    }
+    
+    .location-text-top {
+        display: flex;
+        align-items: center;
+    }
+    
+    .location-container {
+        padding: 2em 0;
+    }
+
+}
+
+@media(min-width: 760px) {
+    
+    nav h3 {
+        font-size: 1rem;
+        padding: 0.5em 0;
+    }
+    
+    main {
+        max-width: 850px;
+        margin: 2em auto 0;
+        display: grid;
+        grid-template: 15em 15em 15em 15em/ 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+}
